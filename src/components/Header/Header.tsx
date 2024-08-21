@@ -2,6 +2,7 @@ import styled from "styled-components";
 import logo from "../../assets/logo.svg";
 import { MainButton } from "../../styledComponents/MainButton";
 import iconInstagram from "../../assets/icon-instagram.png";
+import { UseSmoothScroll } from "../../hooks";
 
 const HeaderElement = styled.header`
   position: fixed;
@@ -62,6 +63,7 @@ const SocialMediaButton = styled.button`
 `;
 
 export const Header = () => {
+  UseSmoothScroll();
   return (
     <HeaderElement>
       <Container className="centralizer">

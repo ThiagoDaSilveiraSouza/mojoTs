@@ -2,7 +2,7 @@ import { ChatWithUs, HowWeDo, MainBanner, WhatWeDo, WhoWheAre } from "./componen
 
 export const HomePage = () => {
   return (
-    <main>
+    <main className="page-main">
       <MainBanner />
       <WhoWheAre />
       <WhatWeDo />

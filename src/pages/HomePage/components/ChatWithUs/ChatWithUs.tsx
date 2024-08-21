@@ -14,8 +14,6 @@ import logo from "../../../../assets/logo.svg";
 const Container = styled.section`
   display: flex;
   gap: 60px;
-  flex-direction: column;
-  padding: 90px 0;
   background: #ebebeb;
   .centralizer {
     display: flex;
@@ -23,6 +21,13 @@ const Container = styled.section`
     justify-content: center;
     gap: 50px;
   }
+`;
+
+const Content = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
 `;
 
 const CompanyDataContainer = styled.div`
@@ -54,35 +59,37 @@ const FormContainer = styled.div`
 
 export const ChatWithUs = () => {
   return (
-    <Container id="converse-conosco">
-      <Title $color={2} $textaling="center">
-        Converse Conosco
-      </Title>
+    <Container id="converse-conosco" className="page-section">
       <div className="centralizer">
-        <CompanyDataContainer>
-          <div>
-            <p>
-              <ImPhone color="#B2CD01" size={20} />
-              <strong>{companyConfigs.contact.phone}</strong>
-            </p>
-            <p>
-              <TfiEmail color="#B2CD01" size={20} fill="#B2CD01" />
-              {companyConfigs.contact.email}
-            </p>
-          </div>
-          <LogoContainer>
-            <img src={logo} alt="logo agencia mojo" />
-          </LogoContainer>
-        </CompanyDataContainer>
-        <FormContainer>
-          <Form>
-            <Input type="text" placeholder="Nome" />
-            <Input type="phone" placeholder="Telefone" />
-            <Input type="email" placeholder="email" $size={2} />
-            <TextArea placeholder="Mensagem:" />
-            <MainButton $fontcolor="white">Enviar</MainButton>
-          </Form>
-        </FormContainer>
+        <Title $color={2} $textaling="center">
+          Converse Conosco
+        </Title>
+        <Content>
+          <CompanyDataContainer>
+            <div>
+              <p>
+                <ImPhone color="#B2CD01" size={20} />
+                <strong>{companyConfigs.contact.phone}</strong>
+              </p>
+              <p>
+                <TfiEmail color="#B2CD01" size={20} fill="#B2CD01" />
+                {companyConfigs.contact.email}
+              </p>
+            </div>
+            <LogoContainer>
+              <img src={logo} alt="logo agencia mojo" />
+            </LogoContainer>
+          </CompanyDataContainer>
+          <FormContainer>
+            <Form>
+              <Input type="text" placeholder="Nome" />
+              <Input type="phone" placeholder="Telefone" />
+              <Input type="email" placeholder="email" $size={2} />
+              <TextArea placeholder="Mensagem:" />
+              <MainButton $fontcolor="white">Enviar</MainButton>
+            </Form>
+          </FormContainer>
+        </Content>
       </div>
     </Container>
   );

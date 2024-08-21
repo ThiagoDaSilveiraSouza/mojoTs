@@ -21,7 +21,6 @@ export const GlobalStyle = createGlobalStyle`
     box-sizing: border-box;
   }
   .page-main{
-    scroll-snap-type: y mandatory;
     height: 100vh;
     overflow-y: scroll;
     scroll-behavior: smooth;
@@ -30,7 +29,6 @@ export const GlobalStyle = createGlobalStyle`
   .page-section{
     display: flex;
     align-items: center;
-    height: 100vh;
     overflow-y: auto;
     scrollbar-width: none;
     scroll-snap-align: start;

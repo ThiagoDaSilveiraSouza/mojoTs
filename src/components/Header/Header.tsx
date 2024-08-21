@@ -65,17 +65,19 @@ export const Header = () => {
   return (
     <HeaderElement>
       <Container className="centralizer">
-        <img src={logo} alt="Agencia Mojo logo" />
+        <a href="#home">
+          <img src={logo} alt="Agencia Mojo logo" />
+        </a>
         <Nav>
           <ul>
             <li>
-              <a href="#">Quem Somos</a>
+              <a href="#quem-nos-somos">Quem Somos</a>
             </li>
             <li>
-              <a href="#">O que fazemos</a>
+              <a href="#o-que-fazemos">O que fazemos</a>
             </li>
             <li>
-              <a href="#">Orçamento</a>
+              <a href="#orçamento">Orçamento</a>
             </li>
           </ul>
           <MainButton>Fale conosco</MainButton>

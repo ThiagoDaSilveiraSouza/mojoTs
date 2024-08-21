@@ -47,7 +47,7 @@ const ParagraphContainer = styled.div`
 
 export const WhoWheAre = () => {
   return (
-    <Section>
+    <Section id="quem-nos-somos">
       <div className="centralizer">
         <ImageContainer>
           <img src={whoWheAreImg} alt="Quem nós somos" />

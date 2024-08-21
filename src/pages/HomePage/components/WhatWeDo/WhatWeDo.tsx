@@ -49,7 +49,7 @@ const Card = styled.div`
 
 export const WhatWeDo = () => {
   return (
-    <Section>
+    <Section id="o-que-fazemos">
       <div className="centralizer">
         <Title>O Que Fazemos</Title>
         <CardsContainer>

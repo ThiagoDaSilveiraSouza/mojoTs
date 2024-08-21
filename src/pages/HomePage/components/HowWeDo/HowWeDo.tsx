@@ -38,7 +38,7 @@ const Card = styled.div`
 
 export const HowWeDo = () => {
   return (
-    <Section>
+    <Section id="como-fazemos">
       <div className="centralizer">
         <Title $color={2}>Como Fazemos</Title>
         <CardContainer>

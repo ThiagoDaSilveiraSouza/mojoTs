@@ -51,7 +51,7 @@ const TextContainer = styled.div`
 
 export const MainBanner = () => {
   return (
-    <Section>
+    <Section id="home">
       <video autoPlay={true} loop={true} muted={true}>
         <source src={videoBanner} type="video/mp4" />
       </video>

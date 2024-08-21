@@ -5,6 +5,7 @@ export const GlobalStyle = createGlobalStyle`
     font-family: "Alexandria", sans-serif;
     --primary-color: #B2CD01;
     --secondary-color: #333333;
+    scroll-behavior: smooth;
   }
   body{
     margin: 0;

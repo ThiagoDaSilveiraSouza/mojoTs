@@ -4,10 +4,10 @@ import { MainButton } from "../../styledComponents/MainButton";
 import iconInstagram from "../../assets/icon-instagram.png";
 import { UseSmoothScroll } from "../../hooks";
 import { HamburgerButton } from "./components";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { UseHeaderStatus } from "../../context";
 
-const responsiveWidth = "800px";
+const responsiveWidth = "1000px";
 
 type HeaderElementProps = {
   $isVisibile: string;
@@ -110,10 +110,6 @@ const SocialMediaButton = styled.button`
 export const Header = () => {
   const [menuMobileIsOpen, setMenuMobielIsOpen] = useState(false);
   const { headerStatus } = UseHeaderStatus();
-
-  useEffect(()=>{
-    console.log(headerStatus.isHidden)
-  },[headerStatus])
 
   UseSmoothScroll();
 

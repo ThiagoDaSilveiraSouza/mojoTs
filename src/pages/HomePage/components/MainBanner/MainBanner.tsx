@@ -32,9 +32,9 @@ const TextContainer = styled.div`
   flex-direction: column;
   gap: 38px;
   h1 {
-    font-size: 98px;
+    font-size: clamp(56px, 7vw, 98px);
     color: white;
-    line-height: 85px;
+    line-height: 85%;
     margin: 0;
     > div {
       color: var(--primary-color);
@@ -42,7 +42,7 @@ const TextContainer = styled.div`
   }
   h4 {
     margin: 0;
-    font-size: 23px;
+    font-size: clamp(16px, 2.5vw, 23px);
     color: white;
     font-weight: 200;
   }

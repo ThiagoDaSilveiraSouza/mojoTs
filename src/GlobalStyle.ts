@@ -18,6 +18,7 @@ export const GlobalStyle = createGlobalStyle`
     scrollbar-width: none;
     max-height: 100%;
     padding: 150px 0 90px 0;
+    box-sizing: border-box;
   }
   .page-main{
     scroll-snap-type: y mandatory;

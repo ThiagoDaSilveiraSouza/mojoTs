@@ -4,7 +4,6 @@ import { MainButton } from "../../../../styledComponents/MainButton";
 import { Title, UpperTitle } from "../../../../styledComponents";
 
 const Section = styled.section`
-  padding: 80px 0;
   .centralizer {
     display: flex;
     justify-content: center;

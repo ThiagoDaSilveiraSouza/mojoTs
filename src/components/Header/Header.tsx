@@ -11,6 +11,9 @@ const HeaderElement = styled.header`
   width: 100%;
   z-index: 1000;
   background: rgba(0, 0, 0, 0.1);
+  .centralizer {
+    padding: 50px 0;
+  }
 `;
 
 const Container = styled.div`

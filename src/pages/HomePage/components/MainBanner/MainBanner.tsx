@@ -9,7 +9,6 @@ const Section = styled.section`
   margin: 0 auto;
   overflow: hidden;
   height: 920px;
-  padding-top: 150px;
   video {
     position: absolute;
     left: 0;

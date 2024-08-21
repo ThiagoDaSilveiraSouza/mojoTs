@@ -4,7 +4,6 @@ import { CardData } from "./data";
 
 const Section = styled.section`
   .centralizer {
-    padding: 90px 0;
     display: flex;
     flex-direction: column;
     gap: 60px;

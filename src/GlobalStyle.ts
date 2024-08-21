@@ -17,6 +17,7 @@ export const GlobalStyle = createGlobalStyle`
     overflow-y: auto;
     scrollbar-width: none;
     max-height: 100%;
+    padding: 150px 0 90px 0;
   }
   .page-main{
     scroll-snap-type: y mandatory;
@@ -32,7 +33,6 @@ export const GlobalStyle = createGlobalStyle`
     overflow-y: auto;
     scrollbar-width: none;
     scroll-snap-align: start;
-    padding-top: 150px;
     box-sizing: border-box;
   }
 `;

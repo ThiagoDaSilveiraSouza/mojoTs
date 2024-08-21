@@ -5,7 +5,6 @@ import { Title } from "../../../../styledComponents";
 
 const Section = styled.section`
   background: var(--secondary-color);
-  padding: 90px 0;
 
   .centralizer {
     display: flex;

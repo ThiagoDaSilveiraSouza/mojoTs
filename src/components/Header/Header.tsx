@@ -4,17 +4,26 @@ import { MainButton } from "../../styledComponents/MainButton";
 import iconInstagram from "../../assets/icon-instagram.png";
 import { UseSmoothScroll } from "../../hooks";
 import { HamburgerButton } from "./components";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { UseHeaderStatus } from "../../context";
 
 const responsiveWidth = "800px";
 
-const HeaderElement = styled.header`
+type HeaderElementProps = {
+  $isVisibile: string;
+};
+
+const HeaderElement = styled.header<HeaderElementProps>`
   position: fixed;
   left: 0;
   top: 0;
   width: 100%;
   z-index: 1000;
   background: rgba(0, 0, 0, 0.1);
+  transform: ${({ $isVisibile }) =>
+    $isVisibile === "true" ? "translateY(-100%)" : "translateY(0%)"};
+  transition: 0.3s;
+
   .centralizer {
     padding: 50px 0;
   }
@@ -100,10 +109,16 @@ const SocialMediaButton = styled.button`
 
 export const Header = () => {
   const [menuMobileIsOpen, setMenuMobielIsOpen] = useState(false);
+  const { headerStatus } = UseHeaderStatus();
+
+  useEffect(()=>{
+    console.log(headerStatus.isHidden)
+  },[headerStatus])
+
   UseSmoothScroll();
 
   return (
-    <HeaderElement>
+    <HeaderElement $isVisibile={headerStatus.isHidden.toString()}>
       <Container className="centralizer">
         <a href="#home">
           <img src={logo} alt="Agencia Mojo logo" />

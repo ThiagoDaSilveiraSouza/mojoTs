@@ -1,7 +1,13 @@
+import { Header } from "./components";
+import { GlobalStyle } from "./GlobalStyle";
+import { HomePage } from "./pages";
+
 function App() {
   return (
     <div>
-      <h1>Mojo!</h1>
+      <GlobalStyle />
+      <Header />
+      <HomePage />
     </div>
   );
 }
